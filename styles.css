@@ -1,0 +1,457 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* This is for header positioning */
+header {
+  position: fixed;
+  top: 0;
+  min-height: 175px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid;
+  background-color: white;
+}
+
+/* This is for the Logo styling and placement */
+.logo {
+  display: flex;
+  align-items: center;
+  height:150px;
+  width: 45vw;
+}
+
+@keyframes colorShift {
+  0%   { color: #ffaa00; }  /* red */
+  50%  { color: #e24128; }  /* orange */
+  100% { color: #952086; }  /* green */
+}
+
+#logo-title {
+  animation: colorShift 5s infinite alternate;
+}
+
+.flip-img {
+  animation: flipX 10s infinite;
+}
+
+@keyframes flipX {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(-1);
+  }
+}
+
+
+/* This is for the creatine, portein, ashwagandha & pricing styling and placement */
+nav > ul {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* This line makes the words go to the row below when the screen gets smaller */
+  column-gap:1em; /* y-axis gap */
+  row-gap: 1em; /* x-axis gap */
+}
+
+/* This is to remove the bullet points from ONLY creatine, protein, ashwagandha and pricing in nav-bar */
+nav > ul > li {
+  list-style: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(33, 104, 255);
+}
+
+/* Font sizing and styling for nav-bar */
+ul > li > a {
+  font-size: 25px;
+}
+
+#header-img {
+  height: 170px;
+  width: 175px;
+}
+
+/* This is for the "built strong supplements" tittle styling */
+#logo-title {
+  padding-bottom: 15px;
+  font-family: Impact;
+  font-weight: normal;
+  font-size: 65px;
+}
+
+#nav-bar {
+  height: 100%;
+}
+
+.nav-link {
+  text-decoration: none;  /* Removes underline from text */
+  color: white;
+}
+
+/* This is for positioning of the email submit section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin-top: 150px;
+}
+
+/* This is for "Ethically sourced" sentence */
+#email-text {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+input {
+  display: flex;
+  width: 100%;
+  max-width: 175px;
+  height: 30px;
+  background-color: rgb(33, 104, 255);
+  font-size: 20px;
+  margin: auto;
+  color: white;
+}
+
+#email {
+  text-align: center;
+  background-color: white;
+  width: 250px;
+  max-width: 275px;
+  margin-bottom: 15px;
+}
+
+.product-title {
+  font-size: 40px;
+  font-family: Anton;
+  font-weight: normal;
+  color: rgb(33, 104, 255);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/* This is to make the picture and facts be next to each other */
+.grid {
+  display: flex;
+}
+
+/* This is the creatine image */
+.creatine-img {
+  display: flex;
+  height: 15vw;
+  margin-right: 20px;
+  min-height: 350px;
+  margin-left: 15px;
+}
+
+#Creatine-Monohydrate {
+  border-top: 2px solid
+}
+
+/* This is for the 3 creatine facts */
+#Creatine-Monohydrate .creatine-facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  font-family: Arial;
+  padding: 20px;
+  background-color: hsl(0, 0%, 90%);
+  width: 100%;
+  height: 300px;
+  max-width: 1500px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.creatine-facts li {
+  margin-bottom: 15px; 
+}
+
+#Whey-Protein {
+  border-top: 2px solid;
+  margin-top: 40px;
+}
+
+#whey-protein-image {
+  display: flex;
+  height: 34vw;
+  margin-left: -100px;
+  min-height: 425px;
+  min-width: 400px;
+  max-height: 450px;
+}
+
+.wp  {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+/* This was to center the video along with the itmes on the left */
+iframe {
+  margin: auto;
+  padding-left: 70px;
+  height: 450px;
+}
+
+/* This is for Whey Protein fact*/
+h3{
+  display: flex;
+  max-width: 400px;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: normal;
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* This is to put a wider gap between the title and product image for creatine and ashwagandha */
+#title {
+  margin-bottom: 35px;
+}
+
+#Ashwagandha {
+  border-top: 2px solid;
+  margin-top: 40px;
+}
+
+/* This is the ashwagandha image */
+#ashwagandha-image {
+  display: flex;
+  height: 15vw;
+  margin-right: 20px;
+  min-height: 350px;
+  margin-left: 15px;
+}
+
+/* This is for the 3 ashwagandha facts */
+#Ashwagandha .ashwagandha-facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  font-family: Arial;
+  padding: 20px;
+  background-color: hsl(0, 0%, 90%);
+  width: 100%;
+  height: 300px;
+  max-width: 1500px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.ashwagandha-facts li {
+  margin-bottom: 15px; 
+}
+
+#Pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3); /* 100% = the full width of the parent element.
+/ 3 = divide that width by 3.
+calc(...) = a CSS function that lets you do math operations in CSS (like addition, subtraction, multiplication, and division). */
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.product:hover {
+  background-color: hsl(0, 0%, 60%);
+  color: white;
+}
+
+.product > .level {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 90%);
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.price {
+  display: flex;
+  font-size: 3em;
+  margin-bottom: 2vw;
+}
+
+button {
+  background-color: hsl(240, 100%, 60%);
+  margin-bottom: 20px;
+  color: white;
+}
+
+.product .button {
+  height: 60px;
+  width: 120px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: hsl(240, 100%, 80%);
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  /* Make header stack vertically */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  /* Make the nav menu stack and center it */
+  nav > ul {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  nav > ul > li {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Logo and title shrink down and center */
+  .logo {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  #logo-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #header-img {
+    height: 120px;
+    width: 120px;
+  }
+
+  /* Shrink the hero section and center the email input */
+  #email-text {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  #email {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Product pricing stacks vertically */
+  #Pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  /* Stack grid sections like images + text vertically */
+  .grid,
+  .wp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .creatine-img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 450px;
+    width: 90%;
+    min-height: 200px;
+  }
+
+  #whey-protein-image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 500px;
+    width: 70%;
+    min-width: 70%;
+  }
+
+  #ashwagandha-image {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    min-height: 400px;
+    width: 30%;
+    min-width: 240px;
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    justify-content: center;
+    padding: 0;
+    width: 60%;
+    height: 500px;
+  }
+
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 22px;
+    padding: 30px;
+    margin-bottom: 20px
+  }
+
+  .creatine-facts li,
+  .ashwagandha-facts li {
+    font-size: 22px;
+  }
+
+  .product-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+/* This for creatine title */
+  #title {
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+}
